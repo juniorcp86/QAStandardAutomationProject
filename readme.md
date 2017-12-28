@@ -22,7 +22,7 @@ Recommendations for comments on classes:
  
  Recommendations for comments on every function:
  /**
- * Name: <functioName>()
+ * Name: <functionName>()
  * Creation Date: DD/MM/YYYY
  * Description: <Main_goal_of_this function>.
  * It has one argument:
