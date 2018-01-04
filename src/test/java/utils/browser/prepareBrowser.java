@@ -20,7 +20,6 @@ import java.util.concurrent.TimeUnit;
  * Created By: Created by @JuniorCasique.
  * Description: This class is for start and set main browser characteristics for every test.
  */
-
 public class prepareBrowser {
     public int i = 1;
     public Logger log;
