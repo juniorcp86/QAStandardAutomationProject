@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import utils.browser.prepareBrowser;
+import utils.validations.numbersFields;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
@@ -16,7 +16,7 @@ import java.util.Properties;
  * Created By: Created by @JuniorCasique.
  * Description: This class is to be used as example and template for automation project.
  */
-public class templateTest extends prepareBrowser {
+public class templateTest extends numbersFields {
     /** General variables to be used loading static information, counters and paths. Alphabetical sorting (Type, variableName). */
     public int i;
     public Logger log;
@@ -98,6 +98,11 @@ public class templateTest extends prepareBrowser {
             driver.quit();
             i++;
         }
+
+
+
+
+
         /*
         * BLOQUE PARA AGREGAR LO QUE DEBE SER EVALUADO EN ESTE ESCENARIO
         * */

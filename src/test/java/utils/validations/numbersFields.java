@@ -27,51 +27,61 @@ public class numbersFields extends prepareBrowser {
         log.info("Starting scenario for empty numbers field.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("");
+        //driver.findElement(By.id("/*IDENTIFICATION FIELD*/")).getText().equals("");
         log.info("Finishing scenario for empty numbers field.");
         //Scenario for fill with blanks
         log.info("Starting scenario for fill with blanks.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("     ");
+        //driver.findElement(By.id("/*IDENTIFICATION FIELD*/")).getText().equals("");
         log.info("Finishing scenario for fill with blanks.");
         //Scenario for fill just with letters
         log.info("Starting scenario for fill just with letters.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("ABCDEFGHIJKLMNO");
+        //driver.findElement(By.id("/*IDENTIFICATION FIELD*/")).getText().equals("");
         log.info("Finishing scenario for fill just with letters.");
         //Scenario for fill just with special characters
         log.info("Starting scenario for fill just with special characters.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("!@#$%^&*()_+={}");
+        //driver.findElement(By.id("/*IDENTIFICATION FIELD*/")).getText().equals("");
         log.info("Finishing scenario for fill just with special characters.");
         //Scenario for fill just with special characters and letters
         log.info("Starting scenario for fill just with special characters and letters.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("!@#$%^&*()abcde");
+        //driver.findElement(By.id("/*IDENTIFICATION FIELD*/")).getText().equals("");
         log.info("Finishing scenario for fill just with special characters and letters.");
         //Scenario for fill just with special characters and numbers
         log.info("Starting scenario for fill just with special characters and numbers.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("!@#$%^&*()12345");
+        //driver.findElement(By.id("/*IDENTIFICATION FIELD*/")).getText().equals("");
         log.info("Finishing scenario for fill just with special characters and numbers.");
         //Scenario for fill just with letters and numbers
         log.info("Starting scenario for fill just with letters and numbers.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("abcdefgh1234567");
+        //driver.findElement(By.id("/*IDENTIFICATION FIELD*/")).getText().equals("");
         log.info("Finishing scenario for fill just with letters and numbers.");
         //Scenario with minimal numbers allow
         log.info("Starting scenario with minimal numbers allow.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("1");
+        //driver.findElement(By.id("/*IDENTIFICATION FIELD*/")).getText().equals("");
         log.info("Finishing scenario with minimal numbers allow.");
         //Scenario with maximal numbers allow
         log.info("Starting scenario with maximal numbers allow.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("12345678901234567890");
+        //driver.findElement(By.id("/*IDENTIFICATION FIELD*/")).getText().equals("");
         log.info("Finishing scenario with maximal numbers allow.");
         //Scenario with correct quantity numbers allow.
         log.info("Starting scenario for .");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("123456789012345");
+        //driver.findElement(By.id("/*IDENTIFICATION FIELD*/")).getText().equals("");
         log.info("Finishing scenario with correct quantity numbers allow.");
         log.info("Finishing scenarios for test with phoneNumber()");
     }
@@ -83,6 +93,7 @@ public class numbersFields extends prepareBrowser {
      * It has one argument:
      * 1. String fieldId: Gets id/xpath/classname or any unique element to identify field on front-end.
      * */
+    /*
     protected void extensionNumber(String fieldId) {
         log = Logger.getLogger(numbersFields.class);
         log.info("Starting scenarios for test with extensionNumber()");
@@ -90,52 +101,63 @@ public class numbersFields extends prepareBrowser {
         log.info("Starting scenario for empty numbers field.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("");
+        //driver.findElement(By.id("IDENTIFICATION FIELD")).getText().equals("");
         log.info("Finishing scenario for empty numbers field.");
         //Scenario for fill with blanks
         log.info("Starting scenario for fill with blanks.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("  ");
+        //driver.findElement(By.id("IDENTIFICATION FIELD")).getText().equals("");
         log.info("Finishing scenario for fill with blanks.");
         //Scenario for fill just with letters
         log.info("Starting scenario for fill just with letters.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("ABC");
+        //driver.findElement(By.id("IDENTIFICATION FIELD")).getText().equals("");
         log.info("Finishing scenario for fill just with letters.");
         //Scenario for fill just with special characters
         log.info("Starting scenario for fill just with special characters.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("!@#");
+        //driver.findElement(By.id("IDENTIFICATION FIELD")).getText().equals("");
         log.info("Finishing scenario for fill just with special characters.");
         //Scenario for fill just with special characters and letters
         log.info("Starting scenario for fill just with special characters and letters.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("!de");
+        //driver.findElement(By.id("IDENTIFICATION FIELD")).getText().equals("");
         log.info("Finishing scenario for fill just with special characters and letters.");
         //Scenario for fill just with special characters and numbers
         log.info("Starting scenario for fill just with special characters and numbers.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("!12");
+        //driver.findElement(By.id("IDENTIFICATION FIELD")).getText().equals("");
         log.info("Finishing scenario for fill just with special characters and numbers.");
         //Scenario for fill just with letters and numbers
         log.info("Starting scenario for fill just with letters and numbers.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("a12");
+        //driver.findElement(By.id("IDENTIFICATION FIELD")).getText().equals("");
         log.info("Finishing scenario for fill just with letters and numbers.");
         //Scenario with minimal numbers allow
         log.info("Starting scenario with minimal numbers allow.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("1");
+        //driver.findElement(By.id("IDENTIFICATION FIELD")).getText().equals("");
         log.info("Finishing scenario with minimal numbers allow.");
         //Scenario with maximal numbers allow
         log.info("Starting scenario with maximal numbers allow.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("1234567890");
+        //driver.findElement(By.id("IDENTIFICATION FIELD")).getText().equals("");
         log.info("Finishing scenario with maximal numbers allow.");
         //Scenario for correct extension quantity number allow
         log.info("Starting scenario for correct extension quantity number allow.");
         driver.findElement(By.id(fieldId)).clear();
         driver.findElement(By.id(fieldId)).sendKeys("123");
+        //driver.findElement(By.id("IDENTIFICATION FIELD")).getText().equals("");
         log.info("Finishing scenario for correct extension quantity number allow.");
         log.info("Finishing scenarios for test with extensionNumber()");
     }
+    */
 }
